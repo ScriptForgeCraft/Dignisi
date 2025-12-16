@@ -25,17 +25,6 @@ https://dignisi.vercel.app/
 -   Normalize + Reset CSS\
 -   Vercel Deployment
 
-## 📂 Project Structure
-
-    Dignisi/
-    ├── index.html
-    ├── README.md
-    └── src/
-        ├── css/
-        ├── js/
-        ├── dignisi/
-        ├── prospekt24/
-        └── dhomie/
 
 ## 🧩 Sections
 
