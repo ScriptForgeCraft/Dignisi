@@ -1,0 +1,1337 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- ===== TITLE ===== -->
+    <title>
+        Dignisi — Недвижимость в Армении | Новостройки, аналитика и жилые проекты
+    </title>
+
+    <!-- ===== DESCRIPTION ===== -->
+    <meta name="description"
+        content="Dignisi — ведущая компания на рынке недвижимости Армении. Продажа новостроек, аналитика рынка, консалтинг Prospect24 и цифровая платформа Dhomie CRM." />
+
+    <!-- ===== CANONICAL ===== -->
+    <link rel="canonical" href="https://dignisi.vercel.app/ru/" />
+
+    <!-- ===== HREFLANG ===== -->
+    <link rel="alternate" hreflang="en" href="https://dignisi.vercel.app/en/" />
+    <link rel="alternate" hreflang="ru" href="https://dignisi.vercel.app/ru/" />
+    <link rel="alternate" hreflang="hy" href="https://dignisi.vercel.app/hy/" />
+    <link rel="alternate" hreflang="x-default" href="https://dignisi.vercel.app/en/" />
+
+    <!-- ===== OPEN GRAPH ===== -->
+    <meta property="og:title" content="Dignisi — Недвижимость в Армении" />
+    <meta property="og:description"
+        content="Новостройки, аналитика рынка, профессиональный консалтинг и экспертные решения в сфере недвижимости." />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://dignisi.vercel.app/ru/" />
+    <meta property="og:locale" content="ru_RU" />
+
+    <meta property="og:image" content="https://dignisi.vercel.app/preview.jpg" />
+    <meta property="og:image:secure_url" content="https://dignisi.vercel.app/preview.jpg" />
+    <meta property="og:image:type" content="image/jpeg" />
+    <meta property="og:image:width" content="1200" />
+    <meta property="og:image:height" content="630" />
+
+    <!-- ===== TWITTER ===== -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="Dignisi — Недвижимость в Армении" />
+    <meta name="twitter:description"
+        content="Новостройки, аналитика рынка, профессиональный консалтинг и экспертные решения в сфере недвижимости." />
+    <meta name="twitter:image" content="https://dignisi.vercel.app/preview.jpg" />
+
+    <!-- ===== GOOGLE VERIFICATION ===== -->
+    <meta name="google-site-verification" content="FDPLvwqXEguhKowu2iUwQL6952gteEq0urr7JuaZngY" />
+
+    <!-- ===== STRUCTURED DATA ===== -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Organization",
+      "name": "Dignisi",
+      "url": "https://dignisi.vercel.app/ru/",
+      "logo": "https://dignisi.vercel.app/dignisi-logo.png",
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "Azatutyan 1",
+        "addressLocality": "Yerevan",
+        "postalCode": "0037",
+        "addressCountry": "Armenia"
+      },
+      "sameAs": [
+        "https://www.facebook.com/dignisi.am/",
+        "https://www.instagram.com/dignisi.am/",
+        "https://www.linkedin.com/company/dignisi/",
+        "https://x.com/dignisi_am/"
+      ]
+    }
+    </script>
+
+    <!-- ===== FONTS ===== -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&display=swap" />
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500&display=swap" />
+
+    <!-- ===== FAVICONS ===== -->
+    <link rel="icon" href="/favicon.ico" sizes="any" />
+    <link rel="icon" type="image/png" href="/favicon.png" sizes="48x48" />
+
+    <!-- ===== STYLES ===== -->
+    <link rel="stylesheet" href="../css/globals.css" />
+    <link rel="stylesheet" href="../dignisi/styles/style.css" />
+    <link rel="stylesheet" href="../dignisi/styles/responsive/responsive.css" />
+
+    <!-- ===== SCRIPTS ===== -->
+    <script type="module" src="../dignisi/js/main.js" defer></script>
+</head>
+
+
+
+
+<body>
+    <header class="main-header">
+        <div class="main-header__inner">
+
+            <!-- LOGO -->
+            <a href="#block-hero" class="main-header__logo">
+                <img src="/dignisi/images/dignisi-logo.png" alt="Логотип Dignisi" width="900" height="600">
+            </a>
+
+            <!-- Desktop NAV -->
+            <nav class="main-header__nav" aria-label="Основная навигация">
+                <ul>
+                    <li><a href="#block-about">О компании</a></li>
+                    <li><a href="#block-history">История</a></li>
+                    <li><a href="#block-partners">Партнёры</a></li>
+                    <li><a href="#loyalty-card">Карта лояльности</a></li>
+                    <li><a href="#block-analytics">Аналитика</a></li>
+                    <li class="nav-lang">
+                        <button class="lang-switcher__button" type="button" aria-haspopup="true" aria-expanded="false">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 32 32">
+                                <path fill="#1435a1" d="M1 11H31V21H1z"></path>
+                                <path d="M5,4H27c2.208,0,4,1.792,4,4v4H1v-4c0-2.208,1.792-4,4-4Z" fill="#fff">
+                                </path>
+                                <path d="M5,20H27c2.208,0,4,1.792,4,4v4H1v-4c0-2.208,1.792-4,4-4Z"
+                                    transform="rotate(180 16 24)" fill="#c53a28"></path>
+                                <path
+                                    d="M27,4H5c-2.209,0-4,1.791-4,4V24c0,2.209,1.791,4,4,4H27c2.209,0,4-1.791,4-4V8c0-2.209-1.791-4-4-4Zm3,20c0,1.654-1.346,3-3,3H5c-1.654,0-3-1.346-3-3V8c0-1.654,1.346-3,3-3H27c1.654,0,3,1.346,3,3V24Z"
+                                    opacity=".15"></path>
+                                <path
+                                    d="M27,5H5c-1.657,0-3,1.343-3,3v1c0-1.657,1.343-3,3-3H27c1.657,0,3,1.343,3,3v-1c0-1.657-1.343-3-3-3Z"
+                                    fill="#fff" opacity=".2"></path>
+                            </svg>
+                            <span>RU</span>
+                            <svg class="arrow" width="10" height="6" viewBox="0 0 10 6">
+                                <path d="M1 1l4 4 4-4" stroke="currentColor" fill="none" />
+                            </svg>
+                        </button>
+
+                        <ul class="lang-switcher__dropdown">
+                            <li>
+                                <a href="/en/">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 32 32">
+                                        <rect x="1" y="4" width="30" height="24" rx="4" ry="4" fill="#fff"></rect>
+                                        <path
+                                            d="M1.638,5.846H30.362c-.711-1.108-1.947-1.846-3.362-1.846H5c-1.414,0-2.65,.738-3.362,1.846Z"
+                                            fill="#a62842"></path>
+                                        <path
+                                            d="M2.03,7.692c-.008,.103-.03,.202-.03,.308v1.539H31v-1.539c0-.105-.022-.204-.03-.308H2.03Z"
+                                            fill="#a62842"></path>
+                                        <path fill="#a62842" d="M2 11.385H31V13.231H2z"></path>
+                                        <path fill="#a62842" d="M2 15.077H31V16.923000000000002H2z"></path>
+                                        <path fill="#a62842" d="M1 18.769H31V20.615H1z"></path>
+                                        <path
+                                            d="M1,24c0,.105,.023,.204,.031,.308H30.969c.008-.103,.031-.202,.031-.308v-1.539H1v1.539Z"
+                                            fill="#a62842"></path>
+                                        <path
+                                            d="M30.362,26.154H1.638c.711,1.108,1.947,1.846,3.362,1.846H27c1.414,0,2.65-.738,3.362-1.846Z"
+                                            fill="#a62842"></path>
+                                        <path d="M5,4h11v12.923H1V8c0-2.208,1.792-4,4-4Z" fill="#102d5e"></path>
+                                        <path
+                                            d="M27,4H5c-2.209,0-4,1.791-4,4V24c0,2.209,1.791,4,4,4H27c2.209,0,4-1.791,4-4V8c0-2.209-1.791-4-4-4Zm3,20c0,1.654-1.346,3-3,3H5c-1.654,0-3-1.346-3-3V8c0-1.654,1.346-3,3-3H27c1.654,0,3,1.346,3,3V24Z"
+                                            opacity=".15"></path>
+                                        <path
+                                            d="M27,5H5c-1.657,0-3,1.343-3,3v1c0-1.657,1.343-3,3-3H27c1.657,0,3,1.343,3,3v-1c0-1.657-1.343-3-3-3Z"
+                                            fill="#fff" opacity=".2"></path>
+                                        <path fill="#fff"
+                                            d="M4.601 7.463L5.193 7.033 4.462 7.033 4.236 6.338 4.01 7.033 3.279 7.033 3.87 7.463 3.644 8.158 4.236 7.729 4.827 8.158 4.601 7.463z">
+                                        </path>
+                                        <path fill="#fff"
+                                            d="M7.58 7.463L8.172 7.033 7.441 7.033 7.215 6.338 6.989 7.033 6.258 7.033 6.849 7.463 6.623 8.158 7.215 7.729 7.806 8.158 7.58 7.463z">
+                                        </path>
+                                        <path fill="#fff"
+                                            d="M10.56 7.463L11.151 7.033 10.42 7.033 10.194 6.338 9.968 7.033 9.237 7.033 9.828 7.463 9.603 8.158 10.194 7.729 10.785 8.158 10.56 7.463z">
+                                        </path>
+                                        <path fill="#fff"
+                                            d="M6.066 9.283L6.658 8.854 5.927 8.854 5.701 8.158 5.475 8.854 4.744 8.854 5.335 9.283 5.109 9.979 5.701 9.549 6.292 9.979 6.066 9.283z">
+                                        </path>
+                                        <path fill="#fff"
+                                            d="M9.046 9.283L9.637 8.854 8.906 8.854 8.68 8.158 8.454 8.854 7.723 8.854 8.314 9.283 8.089 9.979 8.68 9.549 9.271 9.979 9.046 9.283z">
+                                        </path>
+                                        <path fill="#fff"
+                                            d="M12.025 9.283L12.616 8.854 11.885 8.854 11.659 8.158 11.433 8.854 10.702 8.854 11.294 9.283 11.068 9.979 11.659 9.549 12.251 9.979 12.025 9.283z">
+                                        </path>
+                                        <path fill="#fff"
+                                            d="M6.066 12.924L6.658 12.494 5.927 12.494 5.701 11.799 5.475 12.494 4.744 12.494 5.335 12.924 5.109 13.619 5.701 13.19 6.292 13.619 6.066 12.924z">
+                                        </path>
+                                        <path fill="#fff"
+                                            d="M9.046 12.924L9.637 12.494 8.906 12.494 8.68 11.799 8.454 12.494 7.723 12.494 8.314 12.924 8.089 13.619 8.68 13.19 9.271 13.619 9.046 12.924z">
+                                        </path>
+                                        <path fill="#fff"
+                                            d="M12.025 12.924L12.616 12.494 11.885 12.494 11.659 11.799 11.433 12.494 10.702 12.494 11.294 12.924 11.068 13.619 11.659 13.19 12.251 13.619 12.025 12.924z">
+                                        </path>
+                                        <path fill="#fff"
+                                            d="M13.539 7.463L14.13 7.033 13.399 7.033 13.173 6.338 12.947 7.033 12.216 7.033 12.808 7.463 12.582 8.158 13.173 7.729 13.765 8.158 13.539 7.463z">
+                                        </path>
+                                        <path fill="#fff"
+                                            d="M4.601 11.104L5.193 10.674 4.462 10.674 4.236 9.979 4.01 10.674 3.279 10.674 3.87 11.104 3.644 11.799 4.236 11.369 4.827 11.799 4.601 11.104z">
+                                        </path>
+                                        <path fill="#fff"
+                                            d="M7.58 11.104L8.172 10.674 7.441 10.674 7.215 9.979 6.989 10.674 6.258 10.674 6.849 11.104 6.623 11.799 7.215 11.369 7.806 11.799 7.58 11.104z">
+                                        </path>
+                                        <path fill="#fff"
+                                            d="M10.56 11.104L11.151 10.674 10.42 10.674 10.194 9.979 9.968 10.674 9.237 10.674 9.828 11.104 9.603 11.799 10.194 11.369 10.785 11.799 10.56 11.104z">
+                                        </path>
+                                        <path fill="#fff"
+                                            d="M13.539 11.104L14.13 10.674 13.399 10.674 13.173 9.979 12.947 10.674 12.216 10.674 12.808 11.104 12.582 11.799 13.173 11.369 13.765 11.799 13.539 11.104z">
+                                        </path>
+                                        <path fill="#fff"
+                                            d="M4.601 14.744L5.193 14.315 4.462 14.315 4.236 13.619 4.01 14.315 3.279 14.315 3.87 14.744 3.644 15.44 4.236 15.01 4.827 15.44 4.601 14.744z">
+                                        </path>
+                                        <path fill="#fff"
+                                            d="M7.58 14.744L8.172 14.315 7.441 14.315 7.215 13.619 6.989 14.315 6.258 14.315 6.849 14.744 6.623 15.44 7.215 15.01 7.806 15.44 7.58 14.744z">
+                                        </path>
+                                        <path fill="#fff"
+                                            d="M10.56 14.744L11.151 14.315 10.42 14.315 10.194 13.619 9.968 14.315 9.237 14.315 9.828 14.744 9.603 15.44 10.194 15.01 10.785 15.44 10.56 14.744z">
+                                        </path>
+                                        <path fill="#fff"
+                                            d="M13.539 14.744L14.13 14.315 13.399 14.315 13.173 13.619 12.947 14.315 12.216 14.315 12.808 14.744 12.582 15.44 13.173 15.01 13.765 15.44 13.539 14.744z">
+                                        </path>
+                                    </svg>
+                                    English
+                                </a>
+                            </li>
+
+                            <li>
+                                <a href="/hy/">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 32 32">
+                                        <path fill="#102f9b" d="M1 11H31V21H1z"></path>
+                                        <path d="M5,4H27c2.208,0,4,1.792,4,4v4H1v-4c0-2.208,1.792-4,4-4Z"
+                                            fill="#c82a20"></path>
+                                        <path d="M5,20H27c2.208,0,4,1.792,4,4v4H1v-4c0-2.208,1.792-4,4-4Z"
+                                            transform="rotate(180 16 24)" fill="#e8ad3b"></path>
+                                        <path
+                                            d="M27,4H5c-2.209,0-4,1.791-4,4V24c0,2.209,1.791,4,4,4H27c2.209,0,4-1.791,4-4V8c0-2.209-1.791-4-4-4Zm3,20c0,1.654-1.346,3-3,3H5c-1.654,0-3-1.346-3-3V8c0-1.654,1.346-3,3-3H27c1.654,0,3,1.346,3,3V24Z"
+                                            opacity=".15"></path>
+                                        <path
+                                            d="M27,5H5c-1.657,0-3,1.343-3,3v1c0-1.657,1.343-3,3-3H27c1.657,0,3,1.343,3,3v-1c0-1.657-1.343-3-3-3Z"
+                                            fill="#fff" opacity=".2"></path>
+                                    </svg>
+                                    Հայերեն
+                                </a>
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+            </nav>
+
+            <!-- BURGER BUTTON -->
+            <button class="burger-btn" aria-label="Открыть меню">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+
+        </div>
+
+        <!-- MOBILE MENU -->
+        <nav class="mobile-menu" aria-label="Мобильная навигация">
+            <ul>
+                <li><a href="#block-about">О компании</a></li>
+                <li><a href="#block-history">История</a></li>
+                <li><a href="#block-partners">Партнёры</a></li>
+                <li><a href="#loyalty-card">Карта лояльности</a></li>
+                <li><a href="#block-analytics">Аналитика</a></li>
+                <li class="nav-lang">
+                    <button class="lang-switcher__button" type="button" aria-haspopup="true" aria-expanded="false">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 32 32">
+                            <path fill="#1435a1" d="M1 11H31V21H1z"></path>
+                            <path d="M5,4H27c2.208,0,4,1.792,4,4v4H1v-4c0-2.208,1.792-4,4-4Z" fill="#fff">
+                            </path>
+                            <path d="M5,20H27c2.208,0,4,1.792,4,4v4H1v-4c0-2.208,1.792-4,4-4Z"
+                                transform="rotate(180 16 24)" fill="#c53a28"></path>
+                            <path
+                                d="M27,4H5c-2.209,0-4,1.791-4,4V24c0,2.209,1.791,4,4,4H27c2.209,0,4-1.791,4-4V8c0-2.209-1.791-4-4-4Zm3,20c0,1.654-1.346,3-3,3H5c-1.654,0-3-1.346-3-3V8c0-1.654,1.346-3,3-3H27c1.654,0,3,1.346,3,3V24Z"
+                                opacity=".15"></path>
+                            <path
+                                d="M27,5H5c-1.657,0-3,1.343-3,3v1c0-1.657,1.343-3,3-3H27c1.657,0,3,1.343,3,3v-1c0-1.657-1.343-3-3-3Z"
+                                fill="#fff" opacity=".2"></path>
+                        </svg>
+                        <span>RU</span>
+                        <svg class="arrow" width="10" height="6" viewBox="0 0 10 6">
+                            <path d="M1 1l4 4 4-4" stroke="currentColor" fill="none" />
+                        </svg>
+                    </button>
+
+                    <ul class="lang-switcher__dropdown">
+                        <li>
+                            <a href="/en/">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 32 32">
+                                    <rect x="1" y="4" width="30" height="24" rx="4" ry="4" fill="#fff"></rect>
+                                    <path
+                                        d="M1.638,5.846H30.362c-.711-1.108-1.947-1.846-3.362-1.846H5c-1.414,0-2.65,.738-3.362,1.846Z"
+                                        fill="#a62842"></path>
+                                    <path
+                                        d="M2.03,7.692c-.008,.103-.03,.202-.03,.308v1.539H31v-1.539c0-.105-.022-.204-.03-.308H2.03Z"
+                                        fill="#a62842"></path>
+                                    <path fill="#a62842" d="M2 11.385H31V13.231H2z"></path>
+                                    <path fill="#a62842" d="M2 15.077H31V16.923000000000002H2z"></path>
+                                    <path fill="#a62842" d="M1 18.769H31V20.615H1z"></path>
+                                    <path
+                                        d="M1,24c0,.105,.023,.204,.031,.308H30.969c.008-.103,.031-.202,.031-.308v-1.539H1v1.539Z"
+                                        fill="#a62842"></path>
+                                    <path
+                                        d="M30.362,26.154H1.638c.711,1.108,1.947,1.846,3.362,1.846H27c1.414,0,2.65-.738,3.362-1.846Z"
+                                        fill="#a62842"></path>
+                                    <path d="M5,4h11v12.923H1V8c0-2.208,1.792-4,4-4Z" fill="#102d5e"></path>
+                                    <path
+                                        d="M27,4H5c-2.209,0-4,1.791-4,4V24c0,2.209,1.791,4,4,4H27c2.209,0,4-1.791,4-4V8c0-2.209-1.791-4-4-4Zm3,20c0,1.654-1.346,3-3,3H5c-1.654,0-3-1.346-3-3V8c0-1.654,1.346-3,3-3H27c1.654,0,3,1.346,3,3V24Z"
+                                        opacity=".15"></path>
+                                    <path
+                                        d="M27,5H5c-1.657,0-3,1.343-3,3v1c0-1.657,1.343-3,3-3H27c1.657,0,3,1.343,3,3v-1c0-1.657-1.343-3-3-3Z"
+                                        fill="#fff" opacity=".2"></path>
+                                    <path fill="#fff"
+                                        d="M4.601 7.463L5.193 7.033 4.462 7.033 4.236 6.338 4.01 7.033 3.279 7.033 3.87 7.463 3.644 8.158 4.236 7.729 4.827 8.158 4.601 7.463z">
+                                    </path>
+                                    <path fill="#fff"
+                                        d="M7.58 7.463L8.172 7.033 7.441 7.033 7.215 6.338 6.989 7.033 6.258 7.033 6.849 7.463 6.623 8.158 7.215 7.729 7.806 8.158 7.58 7.463z">
+                                    </path>
+                                    <path fill="#fff"
+                                        d="M10.56 7.463L11.151 7.033 10.42 7.033 10.194 6.338 9.968 7.033 9.237 7.033 9.828 7.463 9.603 8.158 10.194 7.729 10.785 8.158 10.56 7.463z">
+                                    </path>
+                                    <path fill="#fff"
+                                        d="M6.066 9.283L6.658 8.854 5.927 8.854 5.701 8.158 5.475 8.854 4.744 8.854 5.335 9.283 5.109 9.979 5.701 9.549 6.292 9.979 6.066 9.283z">
+                                    </path>
+                                    <path fill="#fff"
+                                        d="M9.046 9.283L9.637 8.854 8.906 8.854 8.68 8.158 8.454 8.854 7.723 8.854 8.314 9.283 8.089 9.979 8.68 9.549 9.271 9.979 9.046 9.283z">
+                                    </path>
+                                    <path fill="#fff"
+                                        d="M12.025 9.283L12.616 8.854 11.885 8.854 11.659 8.158 11.433 8.854 10.702 8.854 11.294 9.283 11.068 9.979 11.659 9.549 12.251 9.979 12.025 9.283z">
+                                    </path>
+                                    <path fill="#fff"
+                                        d="M6.066 12.924L6.658 12.494 5.927 12.494 5.701 11.799 5.475 12.494 4.744 12.494 5.335 12.924 5.109 13.619 5.701 13.19 6.292 13.619 6.066 12.924z">
+                                    </path>
+                                    <path fill="#fff"
+                                        d="M9.046 12.924L9.637 12.494 8.906 12.494 8.68 11.799 8.454 12.494 7.723 12.494 8.314 12.924 8.089 13.619 8.68 13.19 9.271 13.619 9.046 12.924z">
+                                    </path>
+                                    <path fill="#fff"
+                                        d="M12.025 12.924L12.616 12.494 11.885 12.494 11.659 11.799 11.433 12.494 10.702 12.494 11.294 12.924 11.068 13.619 11.659 13.19 12.251 13.619 12.025 12.924z">
+                                    </path>
+                                    <path fill="#fff"
+                                        d="M13.539 7.463L14.13 7.033 13.399 7.033 13.173 6.338 12.947 7.033 12.216 7.033 12.808 7.463 12.582 8.158 13.173 7.729 13.765 8.158 13.539 7.463z">
+                                    </path>
+                                    <path fill="#fff"
+                                        d="M4.601 11.104L5.193 10.674 4.462 10.674 4.236 9.979 4.01 10.674 3.279 10.674 3.87 11.104 3.644 11.799 4.236 11.369 4.827 11.799 4.601 11.104z">
+                                    </path>
+                                    <path fill="#fff"
+                                        d="M7.58 11.104L8.172 10.674 7.441 10.674 7.215 9.979 6.989 10.674 6.258 10.674 6.849 11.104 6.623 11.799 7.215 11.369 7.806 11.799 7.58 11.104z">
+                                    </path>
+                                    <path fill="#fff"
+                                        d="M10.56 11.104L11.151 10.674 10.42 10.674 10.194 9.979 9.968 10.674 9.237 10.674 9.828 11.104 9.603 11.799 10.194 11.369 10.785 11.799 10.56 11.104z">
+                                    </path>
+                                    <path fill="#fff"
+                                        d="M13.539 11.104L14.13 10.674 13.399 10.674 13.173 9.979 12.947 10.674 12.216 10.674 12.808 11.104 12.582 11.799 13.173 11.369 13.765 11.799 13.539 11.104z">
+                                    </path>
+                                    <path fill="#fff"
+                                        d="M4.601 14.744L5.193 14.315 4.462 14.315 4.236 13.619 4.01 14.315 3.279 14.315 3.87 14.744 3.644 15.44 4.236 15.01 4.827 15.44 4.601 14.744z">
+                                    </path>
+                                    <path fill="#fff"
+                                        d="M7.58 14.744L8.172 14.315 7.441 14.315 7.215 13.619 6.989 14.315 6.258 14.315 6.849 14.744 6.623 15.44 7.215 15.01 7.806 15.44 7.58 14.744z">
+                                    </path>
+                                    <path fill="#fff"
+                                        d="M10.56 14.744L11.151 14.315 10.42 14.315 10.194 13.619 9.968 14.315 9.237 14.315 9.828 14.744 9.603 15.44 10.194 15.01 10.785 15.44 10.56 14.744z">
+                                    </path>
+                                    <path fill="#fff"
+                                        d="M13.539 14.744L14.13 14.315 13.399 14.315 13.173 13.619 12.947 14.315 12.216 14.315 12.808 14.744 12.582 15.44 13.173 15.01 13.765 15.44 13.539 14.744z">
+                                    </path>
+                                </svg>
+                                English
+                            </a>
+                        </li>
+
+                        <li>
+                            <a href="/hy/">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 32 32">
+                                    <path fill="#102f9b" d="M1 11H31V21H1z"></path>
+                                    <path d="M5,4H27c2.208,0,4,1.792,4,4v4H1v-4c0-2.208,1.792-4,4-4Z" fill="#c82a20">
+                                    </path>
+                                    <path d="M5,20H27c2.208,0,4,1.792,4,4v4H1v-4c0-2.208,1.792-4,4-4Z"
+                                        transform="rotate(180 16 24)" fill="#e8ad3b"></path>
+                                    <path
+                                        d="M27,4H5c-2.209,0-4,1.791-4,4V24c0,2.209,1.791,4,4,4H27c2.209,0,4-1.791,4-4V8c0-2.209-1.791-4-4-4Zm3,20c0,1.654-1.346,3-3,3H5c-1.654,0-3-1.346-3-3V8c0-1.654,1.346-3,3-3H27c1.654,0,3,1.346,3,3V24Z"
+                                        opacity=".15"></path>
+                                    <path
+                                        d="M27,5H5c-1.657,0-3,1.343-3,3v1c0-1.657,1.343-3,3-3H27c1.657,0,3,1.343,3,3v-1c0-1.657-1.343-3-3-3Z"
+                                        fill="#fff" opacity=".2"></path>
+                                </svg>
+                                Հայերեն
+                            </a>
+                        </li>
+                    </ul>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+
+    <main class="page-wrapper">
+
+        <section id="dignisi">
+            <!--------------------BLOCK HERO -------------------->
+
+            <div class="block hero" id="block-hero">
+
+                <div class="hero-content">
+
+                    <span class="big-letter">D</span>
+
+                    <div class="hero-text">
+                        <h1 class="hero-title">DIGNISI</h1>
+                        <hr class="hero-line" />
+                        <p class="hero-subtitle">
+                            СПЕЦИАЛИЗИРОВАННАЯ КОМПАНИЯ ПО ПРОДАЖЕ НОВЫХ ЖИЛЫХ ПРОЕКТОВ
+                        </p>
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            <!--------------------BLOCK END -------------------->
+
+
+
+            <!--------------------BLOCK ABOUT -------------------->
+
+            <div class="block about" id="block-about">
+
+                <div class="about-flex">
+
+                    <header class="about-header">
+                        <h2 class="about-title">
+                            <span>О компании</span>
+                            <span>Мобильное приложение</span>
+                        </h2>
+                    </header>
+
+                    <article class="about-text" aria-labelledby="about-title">
+
+                        <div class="col_left">
+                            <p>
+                                DIGNISI — специализированная компания, работающая на первичном рынке недвижимости.
+                                Компания была основана в 2020 году опытными профессионалами в сфере недвижимости.
+                            </p>
+                            <p>
+                                Компания сотрудничает со 130 девелоперскими организациями, представляя около 80%
+                                рынка недвижимости Армении, и предлагает более 170 проектов как в Армении, так и за её
+                                пределами.
+                            </p>
+                            <p>
+                                Название «Dignisi» в переводе с латинского означает «достоинство».
+                                Именно этот принцип, основанный на многолетнем опыте, лежит в основе стремительного
+                                роста компании.
+                            </p>
+                            <p>
+                                С самого начала миссией компании является достойная работа и формирование прозрачной,
+                                понятной и надёжной среды на рынке недвижимости.
+                            </p>
+                            <p>
+                                В последнее время DIGNISI также сотрудничает с рядом армянских банков,
+                                предоставляя покупателям возможность проверить свою кредитоспособность прямо в офисе
+                                компании,
+                                экономя самый ценный ресурс — время.
+                            </p>
+                        </div>
+
+                        <div class="col_right">
+                            <p>
+                                Одним из ключевых преимуществ компании является приложение DIGNISI.
+                                Оно функционирует как цифровая выставка недвижимости,
+                                предоставляя широкие возможности как для застройщиков, так и для покупателей.
+                            </p>
+                            <p>
+                                Основной целью любого девелопера является увеличение продаж,
+                                и приложение DIGNISI предлагает все необходимые инструменты
+                                для эффективной поддержки и оптимизации этого процесса.
+                            </p>
+                            <p>
+                                Для покупателей приложение открывает доступ более чем к 80% новых жилых проектов Армении
+                                на одной единой платформе, значительно упрощая процесс выбора и принятия решений.
+                            </p>
+                            <p>
+                                Кроме того, приложение предоставляет застройщикам рекламные возможности,
+                                позволяя значительно расширить охват и повысить узнаваемость проектов.
+                            </p>
+                        </div>
+
+                    </article>
+
+                    <figure class="about-image">
+                        <a href="https://app.dignisi.am/download_dignisi?ref=appsflyer" target="_blank"
+                            rel="noopener noreferrer">
+                            <img src="../dignisi/images/mobile-app-preview.webp"
+                                alt="Мобильное приложение Dignisi — платформа для покупателей и застройщиков недвижимости">
+                        </a>
+                    </figure>
+
+                </div>
+
+                <blockquote class="about-quote">
+                    <p>«Мы сотрудничаем с десятками архитектурных студий, а также с Палатой архитекторов».</p>
+                </blockquote>
+
+            </div>
+
+            <!--------------------BLOCK ABOUT END -------------------->
+
+
+            <!--------------------BLOCK  HISTORY -------------------->
+
+            <div class="block history" id="block-history">
+
+                <div class="history-content">
+
+                    <blockquote class="history-quote">
+                        <p class="quote-text">““Dignity reflects who we are and how we work.””</p>
+                        <cite class="quote-author">Director, Co-founder Vardan Aleksanyan</cite>
+                    </blockquote>
+
+
+                    <article class="history-text">
+                        <h2 class="history-title">Dignisi</h2>
+
+                        <p>
+                            Компания была основана тремя сооснователями, каждый из которых обладает более чем
+                            30-летним опытом работы в сфере недвижимости и глубокими профессиональными знаниями
+                            в своей области.
+                        </p>
+
+                        <p>
+                            Понимая уникальность и сложность отрасли, они создали механизм, который делает рынок
+                            недвижимости более доступным, удобным и профессионально представленным,
+                            заменяя устаревшие традиционные методы.
+                        </p>
+
+                        <p>
+                            Сегодня компания с уверенностью заявляет, что внедрила множество инноваций
+                            и современный подход к развитию рынка недвижимости.
+                        </p>
+
+                        <p>
+                            Многолетний опыт и стиль нашей работы сформировали высокий уровень доверия,
+                            мотивируя партнёров сотрудничать с нами и полагаться на наш профессионализм.
+                        </p>
+                    </article>
+
+                </div>
+
+            </div>
+
+            <!--------------------BLOCK HISTORY END -------------------->
+
+            <!--------------------BLOCK PARTNERS -------------------->
+
+            <div class="block partners" id="block-partners">
+
+                <div class="grid-container">
+
+                    <!-- LEFT COLUMN LOGOS -->
+                    <div class="partners-map__logos partners-map__logos--left">
+                        <a href="https://1-sq.am" target="_blank">
+                            <img src="../dignisi/images/partners/1.jpg"
+                                alt="1SQ — девелопер недвижимости, партнёр Dignisi" width="600" height="600">
+                        </a>
+
+                        <a href="https://zoar.am" target="_blank">
+                            <img src="../dignisi/images/partners/2.jpg"
+                                alt="Zoar — девелопер недвижимости, партнёр Dignisi" width="600" height="600">
+                        </a>
+
+                        <a href="https://bedeck.am" target="_blank">
+                            <img src="../dignisi/images/partners/3.jpg"
+                                alt="Bedeck — строительная и девелоперская компания, партнёр Dignisi" width="600"
+                                height="600">
+                        </a>
+
+                        <a href="https://capitalbuild.am" target="_blank">
+                            <img src="../dignisi/images/partners/4.jpg"
+                                alt="Capital Build — девелоперская компания, партнёр Dignisi" width="600" height="600">
+                        </a>
+
+                        <a href="https://monumenthills.am" target="_blank">
+                            <img src="../dignisi/images/partners/5.jpg"
+                                alt="Monument Hills — жилой комплекс, партнёр Dignisi" width="600" height="600">
+                        </a>
+
+                        <a href="https://www.facebook.com/ArcanaClubHouse/about/?_rdr" target="_blank">
+                            <img src="../dignisi/images/partners/6.jpg"
+                                alt="Arcana Club House — жилой комплекс, партнёр Dignisi" width="600" height="600">
+                        </a>
+
+                        <a href="https://www.facebook.com/profile.php?id=61555542334258" target="_blank">
+                            <img src="../dignisi/images/partners/7.jpg"
+                                alt="Девелопер недвижимости — партнёр Dignisi (Facebook)" width="600" height="600">
+                        </a>
+
+                        <a href="https://metruminvest.am" target="_blank">
+                            <img src="../dignisi/images/partners/8.jpg"
+                                alt="Metrum Invest — девелоперская компания, партнёр Dignisi" width="600" height="600">
+                        </a>
+
+                        <a href="https://primedevelopers.am" target="_blank">
+                            <img src="../dignisi/images/partners/9.jpg"
+                                alt="Prime Developers — строительная компания, партнёр Dignisi" width="600"
+                                height="600">
+                        </a>
+
+                        <a href="https://gtbholdings.com" target="_blank">
+                            <img src="../dignisi/images/partners/10.jpg"
+                                alt="GTB Holdings — девелопер недвижимости, партнёр Dignisi" width="600" height="600">
+                        </a>
+
+                        <a href="https://newkomitas.am" target="_blank">
+                            <img src="../dignisi/images/partners/11.jpg"
+                                alt="New Komitas — жилой проект, партнёр Dignisi" width="600" height="600">
+                        </a>
+
+                        <a href="https://riverviewdilijan.com" target="_blank">
+                            <img src="../dignisi/images/partners/12.jpg"
+                                alt="Riverview Dilijan — проект недвижимости, партнёр Dignisi" width="600" height="600">
+                        </a>
+
+                        <a href="https://arare.am" target="_blank">
+                            <img src="../dignisi/images/partners/13.jpg"
+                                alt="Arare — девелоперская компания, партнёр Dignisi" width="600" height="600">
+                        </a>
+
+                        <a href="https://ivygarden.am" target="_blank">
+                            <img src="../dignisi/images/partners/14.jpg"
+                                alt="Ivy Garden — жилой проект, партнёр Dignisi" width="600" height="600">
+                        </a>
+
+                        <a href="https://grealty.am" target="_blank">
+                            <img src="../dignisi/images/partners/15.jpg"
+                                alt="G Realty — девелоперская компания, партнёр Dignisi" width="600" height="600">
+                        </a>
+
+                        <a href="https://nexusprojects.org/novatun" target="_blank">
+                            <img src="../dignisi/images/partners/16.jpg"
+                                alt="Novatun от Nexus Projects — жилой проект, партнёр Dignisi" width="600"
+                                height="600">
+                        </a>
+
+                        <a href="https://sophene.am" target="_blank">
+                            <img src="../dignisi/images/partners/17.jpg"
+                                alt="Sophene — строительная компания, партнёр Dignisi" width="600" height="600">
+                        </a>
+
+                        <a href="https://rayz.am" target="_blank">
+                            <img src="../dignisi/images/partners/18.jpg"
+                                alt="Rayz — девелопер жилой недвижимости, партнёр Dignisi" width="600" height="600">
+                        </a>
+
+                        <a href="https://artco.am" target="_blank">
+                            <img src="../dignisi/images/partners/19.jpg"
+                                alt="Artco — строительная компания, партнёр Dignisi" width="600" height="600">
+                        </a>
+
+                        <a href="https://mountainvillage.am" target="_blank">
+                            <img src="../dignisi/images/partners/20.jpg"
+                                alt="Mountain Village — жилой проект, партнёр Dignisi" width="600" height="600">
+                        </a>
+
+                        <a href="https://www.facebook.com/p/Femida-Residential-Complex-61560937941288/" target="_blank">
+                            <img src="../dignisi/images/partners/21.jpg"
+                                alt="Femida Residential Complex — жилой комплекс, партнёр Dignisi" width="600"
+                                height="600">
+                        </a>
+                    </div>
+
+                    <!-- MAP (CENTER COLUMN) -->
+                    <div class="partners-map__map">
+                        <img src="../dignisi/images/map.png"
+                            alt="Карта Армении с географией партнёрских проектов Dignisi" width="900" height="600">
+                    </div>
+
+                    <!-- RIGHT COLUMN LOGOS -->
+                    <div class="partners-map__logos partners-map__logos--right">
+
+                        <a href="https://armeniagarden.am" target="_blank">
+                            <img src="../dignisi/images/partners/22.jpg"
+                                alt="Armenia Garden — жилой проект, партнёр Dignisi" width="600" height="600">
+                        </a>
+
+                        <a href="https://felicity.am" target="_blank">
+                            <img src="../dignisi/images/partners/23.jpg"
+                                alt="Felicity — девелопер недвижимости, партнёр Dignisi" width="600" height="600">
+                        </a>
+
+                        <a href="https://abovyanhills.am" target="_blank">
+                            <img src="../dignisi/images/partners/24.jpg"
+                                alt="Abovyan Hills — жилой проект, партнёр Dignisi" width="600" height="600">
+                        </a>
+
+                        <a href="https://xn--y9aaaaa9bn3bvvo7gta.xn--y9a3aq" target="_blank">
+                            <img src="../dignisi/images/partners/25.jpg"
+                                alt="Девелоперский проект в Армении — партнёр Dignisi" width="600" height="600">
+                        </a>
+
+                        <a href="https://baghramyan-residence.am" target="_blank">
+                            <img src="../dignisi/images/partners/26.jpg"
+                                alt="Baghramyan Residence — жилой комплекс, партнёр Dignisi" width="600" height="600">
+                        </a>
+
+                        <a href="https://armconstruct.am" target="_blank">
+                            <img src="../dignisi/images/partners/27.jpg"
+                                alt="ArmConstruct — строительная компания, партнёр Dignisi" width="600" height="600">
+                        </a>
+
+                        <a href="https://capitalpark.am" target="_blank">
+                            <img src="../dignisi/images/partners/28.jpg"
+                                alt="Capital Park — девелоперский проект, партнёр Dignisi" width="600" height="600">
+                        </a>
+
+                        <a href="https://www.arcada.am" target="_blank">
+                            <img src="../dignisi/images/partners/29.jpg"
+                                alt="Arcada — девелоперская компания, партнёр Dignisi" width="600" height="600">
+                        </a>
+
+                        <a href="https://www.libertyone.am" target="_blank">
+                            <img src="../dignisi/images/partners/30.jpg"
+                                alt="Liberty One — жилой проект, партнёр Dignisi" width="600" height="600">
+                        </a>
+
+                        <a href="https://monteresidence.am" target="_blank">
+                            <img src="../dignisi/images/partners/31.jpg"
+                                alt="Monte Residence — объект недвижимости, партнёр Dignisi" width="600" height="600">
+                        </a>
+
+                        <a href="https://www.facebook.com/100089550075649/videos/" target="_blank">
+                            <img src="../dignisi/images/partners/32.jpg"
+                                alt="Портфолио девелоперских проектов — партнёр Dignisi (Facebook)" width="600"
+                                height="600">
+                        </a>
+
+                        <a href="https://zover.am" target="_blank">
+                            <img src="../dignisi/images/partners/33.jpg"
+                                alt="Zover — девелоперская компания, партнёр Dignisi" width="600" height="600">
+                        </a>
+
+                        <a href="https://www.facebook.com/royal.residence.yerevan/about/?_rdr" target="_blank">
+                            <img src="../dignisi/images/partners/34.jpg"
+                                alt="Royal Residence Yerevan — жилой проект, партнёр Dignisi" width="600" height="600">
+                        </a>
+
+                        <a href="https://tsaghkadzorhills.am" target="_blank">
+                            <img src="../dignisi/images/partners/35.jpg"
+                                alt="Tsaghkadzor Hills — жилой проект, партнёр Dignisi" width="600" height="600">
+                        </a>
+
+                        <a href="https://www.facebook.com/niconstructionyerevan" target="_blank">
+                            <img src="../dignisi/images/partners/36.jpg"
+                                alt="Ni Construction — девелоперская компания, партнёр Dignisi" width="600"
+                                height="600">
+                        </a>
+
+                        <a href="https://www.facebook.com/61580078272668/mentions/" target="_blank">
+                            <img src="../dignisi/images/partners/37.jpg"
+                                alt="Девелопер недвижимости — партнёр Dignisi (Facebook)" width="600" height="600">
+                        </a>
+
+                        <a href="https://comfortbuild.am" target="_blank">
+                            <img src="../dignisi/images/partners/38.jpg"
+                                alt="Comfort Build — строительная компания, партнёр Dignisi" width="600" height="600">
+                        </a>
+
+                        <a href="https://primedevelopers.am" target="_blank">
+                            <img src="../dignisi/images/partners/39.jpg"
+                                alt="Prime Developers — строительная компания, партнёр Dignisi" width="600"
+                                height="600">
+                        </a>
+
+                        <a href="https://www.facebook.com/profile.php?id=61558732704095" target="_blank">
+                            <img src="../dignisi/images/partners/40.jpg"
+                                alt="Проект недвижимости — партнёр Dignisi (Facebook)" width="600" height="600">
+                        </a>
+
+                        <a href="https://solarcity.am" target="_blank">
+                            <img src="../dignisi/images/partners/41.png"
+                                alt="Solar City — жилой девелоперский проект, партнёр Dignisi" width="600" height="600">
+                        </a>
+
+                        <a href="https://www.facebook.com/mlmining/about/?_rdr" target="_blank">
+                            <img src="../dignisi/images/partners/42.png"
+                                alt="ML Mining — партнёр в сфере недвижимости, партнёр Dignisi" width="600"
+                                height="600">
+                        </a>
+                    </div>
+
+                    <!-- SUBTITLE (FULL WIDTH) -->
+                    <p class="partners-map__subtitle" id="partners-title">
+                        СОТРУДНИЧАЕМ БОЛЕЕ ЧЕМ СО 130 ДЕВЕЛОПЕРАМИ ПО ВСЕЙ АРМЕНИИ
+                    </p>
+
+                </div>
+
+            </div>
+
+            <!--------------------BLOCK PARTNERS END -------------------->
+
+
+
+            <!--------------------BLOCK LOYALTY CARD-------------------->
+
+            <div class="block loyalty-card" id="loyalty-card">
+
+                <div class="loyalty-display">
+
+                    <div class="left-block">
+
+                        <div class="left-block__text">
+                            <p>
+                                <span class="display-block">
+                                    «Сегодня количество наших проектов растёт с каждым днём,
+                                    что напрямую связано с качеством нашей работы и уровнем предоставляемых услуг.
+                                </span>
+                                Крупнейшие компании, реализующие 14, 8 и 7 проектов,
+                                полностью доверили свои проекты Dignisi».
+                            </p>
+                        </div>
+
+                        <h1 class="left-block__title">
+                            <span class="display-block">LOYALTY</span>
+                            <span class="display-block">CARD</span>
+                        </h1>
+
+                        <div class="left-block__text">
+                            <p>
+                                <span class="display-block">
+                                    «Ориентируясь на потребности клиентов, мы сотрудничаем с рядом компаний
+                                    и в рамках этих партнёрств создали подарочные карты лояльности,
+                                    доступные исключительно для наших клиентов».
+                                </span>
+                                Эти карты позволяют покупателям сэкономить до 2 миллионов драмов
+                                на различных покупках — от услуг по дизайну интерьера до бытовой техники.
+                            </p>
+                        </div>
+
+                    </div>
+
+                    <div class="right-block">
+                        <a href="https://www.facebook.com/photo/?fbid=1535800484204702" target="_blank"
+                            rel="noopener noreferrer">
+                            <img src="../dignisi/images/loyalty-card/loyalty-card.webp"
+                                alt="Карта лояльности Dignisi — привилегии и скидки для клиентов" width="900"
+                                height="600">
+                        </a>
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            <!--------------------BLOCK LOYALTY CARD END -------------------->
+
+
+
+            <!--------------------BLOCK PODCAST-------------------->
+
+            <div class="block podcast">
+
+                <div class="podcast-block">
+
+                    <div class="podcast-text">
+                        <h2 class="podcast-title">About the Podcast</h2>
+
+                        <p>
+                            Для более глубокого понимания строительной отрасли и смежных направлений
+                            мы создали «Dignisi Podcast» на нашем YouTube-канале.
+                            В подкасте мы освещаем последние новости отрасли,
+                            обсуждаем актуальные вызовы и рассматриваем возможные пути их решения.
+                            Основная цель подкаста — предоставить покупателям достоверную информацию,
+                            помочь лучше разобраться в сфере недвижимости и расширить их профессиональные знания.
+                        </p>
+                    </div>
+
+                    <div class="podcast-image">
+                        <a href="https://www.youtube.com/@DignisiPodcast" target="_blank" rel="noopener">
+
+                            <div class="podcast-card">
+                                <div class="podcast-card__header">
+                                    <p class="podcast-card__title">DIGNISI</p>
+                                    <p class="podcast-card__title">PODCAST</p>
+                                </div>
+
+                                <div class="podcast-card__play">
+                                    <div class="podcast-card__play-circle">▶</div>
+                                    <span class="podcast-card__cta">Смотреть на YouTube</span>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+
+                </div>
+
+                <div class="podcast-episodes">
+
+                    <div class="episode-card">
+                        <a href="https://www.youtube.com/watch?v=_9bt-0AsXTA&t=1s" target="_blank">
+                            <img src="../dignisi/images/podcast/1.avif"
+                                alt="DIGNISI Podcast #15 — «Для меня армянин — это человек с совестью». Музыкант и композитор Арто Тунджбояджян">
+                        </a>
+                        <span class="episode-time">26:29</span>
+                    </div>
+
+                    <div class="episode-card">
+                        <a href="https://www.youtube.com/watch?v=JfdraHdp5Bk" target="_blank">
+                            <img src="../dignisi/images/podcast/2.avif"
+                                alt="DIGNISI NEWS — Новости рынка недвижимости и строительства">
+                        </a>
+                        <span class="episode-time">30:36</span>
+                    </div>
+
+                    <div class="episode-card">
+                        <a href="https://www.youtube.com/watch?v=LGV7Km6JAxQ" target="_blank">
+                            <img src="../dignisi/images/podcast/3.avif"
+                                alt="DIGNISI Podcast #11 — Лиана Саакян, основатель туристической компании Go Travel. Месяц женщин">
+                        </a>
+                        <span class="episode-time">26:18</span>
+                    </div>
+
+                    <div class="episode-card">
+                        <a href="https://www.youtube.com/watch?v=WM5sHEXFPm8&t=21s" target="_blank">
+                            <img src="../dignisi/images/podcast/4.avif"
+                                alt="DIGNISI NEWS — Большой потенциал рынка недвижимости в Армении">
+                        </a>
+                        <span class="episode-time">27:30</span>
+                    </div>
+
+                    <div class="episode-card">
+                        <a href="https://www.youtube.com/watch?v=0j4yMUnqH9I" target="_blank">
+                            <img src="../dignisi/images/podcast/5.avif"
+                                alt="DIGNISI Podcast #20 — Банкротства в сфере девелопмента и строительства">
+                        </a>
+                        <span class="episode-time">25:05</span>
+                    </div>
+
+                    <div class="episode-card">
+                        <a href="https://www.youtube.com/watch?v=YIz9ZWIZDPg" target="_blank">
+                            <img src="../dignisi/images/podcast/6.avif"
+                                alt="DIGNISI NEWS — Культурные различия и соседские отношения. Фынг Янгминг">
+                        </a>
+                        <span class="episode-time">22:01</span>
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            <!--------------------BLOCK PODCAST END -------------------->
+
+
+
+            <!--------------------BLOCK ANALYTICS-------------------->
+
+            <div class="block analytics" id="block-analytics">
+
+                <header class="analytics-header">
+                    <h2 class="analytics-title">
+                        Анализ рынка недвижимости в Армении (2020–2025)
+                    </h2>
+                </header>
+
+                <div class="analytics-display">
+
+                    <div class="analytics-intro">
+                        <p>
+                            За последние пять лет рынок недвижимости Армении претерпел значительные изменения,
+                            сформированные как внутренними, так и внешними экономическими и социальными факторами.
+                        </p>
+                        <p>
+                            Ниже представлен график, отражающий количество сделок купли-продажи недвижимости,
+                            зарегистрированных в Армении в период с 2020 по 2025 годы.
+                        </p>
+                    </div>
+
+                    <div class="analytics-graph">
+
+                        <div class="analytics-content">
+                            <h3 class="analytics-subtitle">2025 год</h3>
+
+                            <ul class="analytics-list">
+                                <li>
+                                    Общее количество сделок: 12 484, из которых 2 484 (19,9%)
+                                    пришлись на продажи от застройщиков
+                                </li>
+                            </ul>
+
+                            <ul class="analytics-sublist">
+                                <li>
+                                    <strong>Январь:</strong> 3 640 сделок
+                                    <span>(759 от застройщиков)</span>
+                                </li>
+                                <li>
+                                    <strong>Февраль:</strong> 4 586 сделок
+                                    <span>(1 044 от застройщиков)</span>
+                                </li>
+                                <li>
+                                    <strong>Март:</strong> 4 258 сделок
+                                    <span>(681 от застройщиков)</span>
+                                </li>
+                            </ul>
+
+                            <div class="analytics-note">
+                                <hr>
+                                <p>
+                                    Из общего числа 12 484 сделок 4 346 были совершены в Ереване,
+                                    при этом 2 807 из них составили продажи квартир.
+                                    Из этого количества 1 591 сделка (около 57%) была осуществлена
+                                    на первичном рынке от застройщиков.
+                                </p>
+                            </div>
+
+                        </div>
+
+                        <div class="analytics-chart-wrapper">
+
+                            <div class="analytics-chart">
+
+                                <div class="chart-years">
+                                    <span>2020</span>
+                                    <span>2021</span>
+                                    <span>2022</span>
+                                    <span>2023</span>
+                                    <span>2024</span>
+                                    <span>2025</span>
+                                </div>
+
+                                <canvas id="salesChart"></canvas>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            <!--------------------BLOCK ANALYTICS END -------------------->
+
+
+
+            <!--------------------BLOCK ANALYTICS DETAILS-------------------->
+
+            <div class="block analytics-details">
+
+                <header class="analytics-header">
+                    <h2 class="analytics-title">
+                        Анализ рынка недвижимости в Армении (2020–2025)
+                    </h2>
+                </header>
+
+                <div class="analytics-details-display">
+
+                    <!-- ===== LEFT COLUMN ===== -->
+                    <article class="analytics-details-col-left">
+                        <h3 class="analytics-details-subtitle">
+                            Ереван, I квартал 2025 года — структура сделок купли-продажи
+                        </h3>
+
+                        <p>
+                            В регионах из 8 138 зарегистрированных сделок 64,7% пришлись на операции с земельными
+                            участками.
+                        </p>
+
+                        <hr class="analytics-details-divider">
+
+                        <h3 class="analytics-details-subtitle">
+                            II квартал (14 346 сделок)
+                        </h3>
+
+                        <p>
+                            Во втором квартале 2025 года количество сделок купли-продажи достигло 14 346.
+                            Это заметный рост как по сравнению с первым кварталом,
+                            так и относительно аналогичного периода 2024 года.
+                        </p>
+                    </article>
+
+                    <!-- ===== CENTER COLUMN ===== -->
+                    <article class="analytics-details-col-right">
+                        <div class="analytics-details-block">
+                            <hr class="details-divider" />
+
+                            <p>
+                                Из 14 346 сделок 5 544 были совершены в Ереване,
+                                что составило 38,6% от общего объёма операций.
+                            </p>
+
+                            <p>
+                                В Котайкской области было зарегистрировано 2 583 сделки (18% от общего числа),
+                                что на 26% больше по сравнению с предыдущим полугодием.
+                                Это свидетельствует о сохраняющемся высоком спросе,
+                                особенно на фоне активного развития новых жилых проектов.
+                            </p>
+
+                            <p>
+                                Из 5 544 сделок, совершённых в Ереване,
+                                2 866 — около 51,7% — были покупками у застройщиков.
+                                Это подтверждает, что более половины активности столичного рынка жилья
+                                по-прежнему формируется первичным сегментом,
+                                отражая устойчивое доверие покупателей к новому строительству.
+                            </p>
+                        </div>
+                    </article>
+
+                    <article class="analytics-details-col-left">
+
+                        <hr class="analytics-details-divider">
+
+                        <h3 class="analytics-details-subtitle">
+                            III квартал (15 164 сделки)
+                        </h3>
+
+                        <p>
+                            В третьем квартале было завершено 15 164 сделки купли-продажи,
+                            что вновь указывает на продолжающееся укрепление рынка недвижимости.
+                        </p>
+
+                        <p>
+                            Данный показатель демонстрирует квартальный рост
+                            как по сравнению со II кварталом 2025 года,
+                            так и с III кварталом предыдущего года.
+                        </p>
+                    </article>
+
+                </div>
+
+            </div>
+
+
+            <!--------------------BLOCK ANALYTICS DETAILS END-------------------->
+
+
+
+            <!--------------------BLOCK ANALYTICS  PRICES +++ -------------------->
+
+            <div class="block analytics-prices">
+
+                <header class="analytics-header">
+                    <h2 class="analytics-title">
+                        Анализ рынка недвижимости в Армении (2015–2024)
+                    </h2>
+                </header>
+
+                <h2 class="analytics-subtitle">
+                    Средние цены на квартиры за период 2015–2024 годов
+                </h2>
+
+                <div class="prices-chart-container">
+                    <div class="analytics-chart-scroll">
+                        <div class="analytics-chart-area">
+                            <canvas id="pricesChart"></canvas>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+
+            <!--------------------BLOCK ANALYTICS PRICES END-------------------->
+
+
+
+            <!--------------------BLOCK ANALYTICS REGIONAL SHARE-------------------->
+
+            <div class="block analytics-regional-share">
+
+                <header class="analytics-header">
+                    <h2 class="analytics-title">
+                        Аналитика Dignisi (2020–2025)
+                    </h2>
+                </header>
+
+                <div class="analytics-regional-share-container">
+
+                    <h2 class="analytics-regional-subtitle">
+                        За последние пять лет на диаграмме ниже представлена доля продаж компании Dignisi
+                        за период 2020–2025 годов.
+                    </h2>
+
+                    <div class="chart-sales">
+
+                        <div class="pieYerevan">
+                            <div class="Pie-Yerevan">
+
+                                <span class="percent-big">71.6%</span>
+                                <span class="percent-small">28.4%</span>
+
+                            </div>
+
+                            <h3 class="city-title">АБОВЯН</h3>
+                        </div>
+
+                        <div class="pieAbovyan">
+                            <div class="Pie-Abovyan">
+
+                                <span class="percent-big">90.2%</span>
+                                <span class="percent-small">9.8%</span>
+
+                            </div>
+
+                            <h3 class="city-title">ЕРЕВАН</h3>
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            <!--------------------BLOCK ANALYTICS REGIONAL SHARE END-------------------->
+
+
+
+            <!--------------------BLOCK  VISION MISSION-------------------->
+
+            <div class="block vision-mission">
+
+                <header class="analytics-header">
+                    <h2 class="analytics-title">
+                        VISION / MISSION
+                    </h2>
+                </header>
+
+                <div class="vision-block">
+
+                    <div class="vision-left-block">
+                        <span class="our-vision">Our Vision</span>
+                        <p>
+                            Стать глобальным ориентиром в сфере решений для рынка недвижимости,
+                            предлагая инновационные, высококачественные и надёжные услуги,
+                            создающие долгосрочную ценность и доверие.
+                            Мы стремимся обеспечить каждому клиенту доступный, удобный и насыщенный знаниями опыт,
+                            устанавливая новые стандарты на рынках по всему миру.
+                        </p>
+                    </div>
+
+                    <div class="vision-right-block">
+                        <span class="our-vision">Our Mission</span>
+                        <p>
+                            Предоставлять исключительные услуги в сфере недвижимости,
+                            которые формируют доверие, создают реальную ценность
+                            и обеспечивают для каждого клиента комфортный,
+                            прозрачный и результативный опыт взаимодействия.
+                        </p>
+                    </div>
+
+                </div>
+
+            </div>
+
+            <!--------------------BLOCK VISION MISSION END-------------------->
+        </section>
+
+    </main>
+
+
+
+    <footer class="footer">
+        <div class="footer__inner">
+
+            <div class="footer__info">
+
+                <div class="footer__col">
+                    <h3 class="footer__title">Адрес</h3>
+                    <p>
+                        Ереван<br>
+                        Азатутян, 1<br>
+                        Ереван 0037<br>
+                        Республика Армения
+                    </p>
+                </div>
+
+                <div class="footer__col">
+                    <h3 class="footer__title">Сотрудничество</h3>
+                    <p>
+                        По вопросам сотрудничества,<br>
+                        напишите нам:
+                        <strong class="copy-item" data-copy="team@dignisi.am"
+                            aria-label="Скопировать адрес электронной почты">
+                            team@dignisi.am
+                        </strong>
+                    </p>
+                </div>
+
+                <div class="footer__col">
+                    <h3 class="footer__title">Телефон</h3>
+                    <p class="copy-item" data-copy="+37477887772" aria-label="Скопировать номер телефона">
+                        +374 77 88 77 72
+                    </p>
+                </div>
+
+            </div>
+
+            <nav class="footer__socials" aria-label="Ссылки на социальные сети">
+
+                <a href="https://www.facebook.com/dignisi.am/" aria-label="Dignisi в Facebook" target="_blank"
+                    rel="noopener noreferrer">
+                    <img class="facebook-icon" src="../dignisi/images/footer/facebook-gold.svg"
+                        alt="Официальная страница Dignisi в Facebook">
+                </a>
+
+                <a href="https://www.instagram.com/dignisi.am/" aria-label="Dignisi в Instagram" target="_blank"
+                    rel="noopener noreferrer">
+                    <img class="instagram-icon" src="../dignisi/images/footer/instagram-gold.svg"
+                        alt="Официальный аккаунт Dignisi в Instagram">
+                </a>
+
+                <a href="https://www.linkedin.com/company/dignisi/" aria-label="Dignisi в LinkedIn" target="_blank"
+                    rel="noopener noreferrer">
+                    <img class="linkedin-icon" src="../dignisi/images/footer/linkedin-gold.svg"
+                        alt="Страница компании Dignisi в LinkedIn">
+                </a>
+
+                <a href="https://x.com/dignisi_am/" aria-label="Dignisi в X (Twitter)" target="_blank"
+                    rel="noopener noreferrer">
+                    <img class="X-icon" src="../dignisi/images/footer/x-gold.svg"
+                        alt="Официальный профиль Dignisi в X (Twitter)">
+                </a>
+
+            </nav>
+
+        </div>
+
+        <div class="footer__bottom">
+            © 2020 Dignisi. Все права защищены.
+        </div>
+    </footer>
+
+
+</body>
+
+</html>

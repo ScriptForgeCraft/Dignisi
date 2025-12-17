@@ -1,9 +1,11 @@
 document.addEventListener("DOMContentLoaded", () => {
   const header = document.querySelector(".main-header");
+  const langItem = document.querySelector(".nav-lang");
+
   let lastScrollY = window.scrollY;
   let lockHeader = false;
 
-  document.querySelectorAll("nav a, .mobile-menu a").forEach(link => {
+  document.querySelectorAll("nav a, .mobile-menu a").forEach((link) => {
     link.addEventListener("click", () => {
       lockHeader = true;
 
@@ -33,6 +35,7 @@ document.addEventListener("DOMContentLoaded", () => {
       header.classList.add("main-header--hidden");
     } else {
       header.classList.remove("main-header--hidden");
+      langItem.classList.remove("open");
     }
 
     lastScrollY = currentY;

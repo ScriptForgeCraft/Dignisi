@@ -2,6 +2,8 @@ import { defineConfig } from "vite";
 import path from "path";
 
 export default defineConfig({
+  root: "src",
+
   resolve: {
     alias: {
       "@": path.resolve(__dirname, "src"),
@@ -12,11 +14,19 @@ export default defineConfig({
   },
 
   build: {
+    outDir: "../dist",
+    emptyOutDir: true,
     minify: "esbuild",
     target: "esnext",
     sourcemap: false,
 
     rollupOptions: {
+      input: {
+        "en/index": path.resolve(__dirname, "src/en/index.html"),
+        "ru/index": path.resolve(__dirname, "src/ru/index.html"),
+        "hy/index": path.resolve(__dirname, "src/hy/index.html"),
+      },
+
       output: {
         manualChunks: {
           chart: ["chart.js", "chartjs-plugin-datalabels"],
@@ -25,5 +35,3 @@ export default defineConfig({
     },
   },
 });
-	
-

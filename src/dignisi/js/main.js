@@ -3,6 +3,22 @@ import "@js/navigation/headerScroll.js";
 import "@js/navigation/mobileMenu.js";
 import "@js/partners-scroll.js";
 
+const langItem = document.querySelector(".nav-lang");
+const langButton = langItem.querySelector(".lang-switcher__button");
+
+langButton.addEventListener("click", (e) => {
+  e.stopPropagation();
+  langItem.classList.toggle("open");
+
+  const expanded = langButton.getAttribute("aria-expanded") === "true";
+  langButton.setAttribute("aria-expanded", String(!expanded));
+});
+
+document.addEventListener("click", () => {
+  langItem.classList.remove("open");
+  langButton.setAttribute("aria-expanded", "false");
+});
+
 document.addEventListener("DOMContentLoaded", async () => {
   const initCharts = () => {
     import("@js/pricesChart.js");

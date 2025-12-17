@@ -1,4 +1,27 @@
 {
+  "redirects": [
+    {
+      "source": "/",
+      "destination": "/en/",
+      "permanent": true
+    },
+    {
+      "source": "/en",
+      "destination": "/en/",
+      "permanent": true
+    },
+    {
+      "source": "/ru",
+      "destination": "/ru/",
+      "permanent": true
+    },
+    {
+      "source": "/hy",
+      "destination": "/hy/",
+      "permanent": true
+    }
+  ],
+
   "routes": [
     {
       "src": "/sitemap.xml",
