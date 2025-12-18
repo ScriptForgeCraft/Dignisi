@@ -33,9 +33,9 @@ document.addEventListener("DOMContentLoaded", () => {
 
     if (currentY > lastScrollY && currentY > 80) {
       header.classList.add("main-header--hidden");
+      langItem.classList.remove("open");
     } else {
       header.classList.remove("main-header--hidden");
-      langItem.classList.remove("open");
     }
 
     lastScrollY = currentY;

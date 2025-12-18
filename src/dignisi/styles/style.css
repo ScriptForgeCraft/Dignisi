@@ -2,7 +2,6 @@
    DIGNISI — HERO BLOCK
 ==================================*/
 
-/* Основной контейнер hero */
 .hero {
   background: #000;
   position: relative;
@@ -98,6 +97,18 @@
   }
 }
 
+:lang(hy) .about-title span {
+  &:first-child {
+    font-size: 2rem;
+    letter-spacing: 0.1em;
+  }
+  &:last-child {
+    font-size: 2rem;
+    letter-spacing: 0.1em;
+    color: var(--text_color_gold);
+  }
+}
+
 .about {
   position: relative;
   display: flex;
@@ -125,6 +136,7 @@
   margin-top: 1.5rem;
 }
 
+
 .about-text .col_left,
 .about-text .col_right {
   flex: 1;
@@ -134,6 +146,17 @@
 
   font-weight: 200;
 }
+
+:lang(hy) .about-text .col_left,
+:lang(hy) .about-text .col_right,
+:lang(ru) .about-text .col_left,
+:lang(ru) .about-text .col_right {
+  font-family: "Noto Sans Armenian", "Noto Sans", sans-serif;
+  font-weight: 100;
+  font-size: 1rem;
+ 
+}
+
 
 .about-quote {
   font-style: italic;
@@ -170,6 +193,10 @@
   width: 25%;
   text-align: justify;
   font-size: 1rem;
+}
+
+ :where(:lang(hy), :lang(ru)) .history-text {
+  width: 35%;
 }
 
 .history-title {
@@ -397,6 +424,18 @@
   font-size: 1.2rem;
   order: 2;
   line-height: 1.65;
+  max-width: 40vw;
+}
+
+:where(:lang(hy)) .podcast-text p {
+  font-size: 1.1rem;
+  line-height: 1.4;
+  max-width: 43vw;
+}
+
+:where(:lang(ru)) .podcast-text p {
+  font-size: 1.2rem;
+  line-height: 1.5;
   max-width: 40vw;
 }
 
@@ -655,21 +694,21 @@
 =========================================== */
 
 .analytics-chart-wrapper::-webkit-scrollbar {
-  height: 6px; /* тонкий */
+  height: 6px; 
 }
 
 .analytics-chart-wrapper::-webkit-scrollbar-track {
-  background: rgba(255, 255, 255, 0.04); /* лёгкая тень */
+  background: rgba(255, 255, 255, 0.04); 
   border-radius: 10px;
 }
 
 .analytics-chart-wrapper::-webkit-scrollbar-thumb {
-  background: linear-gradient(90deg, #bea06e, #cbb488); /* gold gradient */
+  background: linear-gradient(90deg, #bea06e, #cbb488);
   border-radius: 10px;
 }
 
 .analytics-chart-wrapper::-webkit-scrollbar-thumb:hover {
-  background: linear-gradient(90deg, #d7c3a0, #e6d7b9); /* мягкий hover */
+  background: linear-gradient(90deg, #d7c3a0, #e6d7b9);
 }
 
 /* ===========================================
@@ -807,6 +846,10 @@
   font-weight: lighter;
 }
 
+:lang(hy)  .analytics-regional-subtitle {
+  font-size: 1.2rem;
+}
+
 .chart-sales {
   display: flex;
   justify-content: center;
@@ -897,6 +940,10 @@
   color: #cda631;
 }
 
+:is(:lang(hy), :lang(ru)) .city-title {
+  font-size: 1.5rem;
+}
+
 /* ===========================================
     block analytics-regional-share END
 =========================================== */
@@ -934,6 +981,13 @@
       text-align: end;
     }
   }
+}
+
+:lang(hy) .vision-left-block,
+:lang(hy) .vision-right-block,
+:lang(ru) .vision-left-block,
+:lang(ru) .vision-right-block {
+  font-size: 1rem;
 }
 
 .our-vision {

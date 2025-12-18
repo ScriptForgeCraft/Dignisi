@@ -16,11 +16,7 @@ html {
   --root_padding_top: 3.5rem;
 }
 :lang(hy) {
-  --root_padding: 3rem;
-  & .history .history-text {
-    font-weight: lighter !important;
-    font-size: 0.9rem !important;
-  }
+  --root_padding: 5rem;
 }
 
 /*scroll */
@@ -131,6 +127,12 @@ img {
   letter-spacing: 0.05em;
   transition: color 0.3s ease;
 }
+:lang(hy) .main-header__nav  ul  {
+  gap:0 clamp(1rem, 1.5vw, 28px);
+}
+:lang(hy) .main-header__nav  a  {
+  font-size: clamp(1rem, 1.2vw, 18px);
+}
 
 .main-header__nav a:hover {
   color: var(--text_color_dark_gold);
@@ -174,7 +176,7 @@ img {
 }
 
 /* ============================================
-   MOBILE MENU (offcanvas panel)
+   MOBILE MENU 
 ============================================ */
 .mobile-menu {
   position: fixed;
