@@ -16,11 +16,12 @@ html {
   --root_padding_top: 3.5rem;
 }
 :lang(hy) {
-  font-size: clamp(11px, 1vw, 16px);
-  --root_padding: 7.25rem;
-  font-weight: lighter;
+  --root_padding: 3rem;
+  & .history .history-text {
+    font-weight: lighter !important;
+    font-size: 0.9rem !important;
+  }
 }
-
 
 /*scroll */
 html,
