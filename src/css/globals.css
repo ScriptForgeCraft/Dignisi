@@ -259,6 +259,7 @@ body.no-scroll {
   visibility: hidden;
   pointer-events: none;
   transition: opacity 0.2s ease, transform 0.2s ease, visibility 0.2s ease;
+  background-color: #000;
   z-index: 1000;
 }
 
