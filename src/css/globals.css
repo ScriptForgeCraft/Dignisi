@@ -200,6 +200,12 @@ img {
   text-decoration: none;
   font-family: "Inter", sans-serif;
   letter-spacing: 0.05em;
+  display: flex;
+  gap: 10px;
+
+}
+.mobile-menu a:hover {
+  color: var(--text_color_dark_gold);
 }
 
 body.no-scroll {
@@ -209,7 +215,9 @@ body.no-scroll {
 /* ============================================
    LANG SWITCHER
 ============================================ */
-
+.main-header__nav .lang-switcher__dropdown {
+  gap: 0;
+}
 .main-header__nav li.nav-lang {
   position: relative;
   list-style: none;
@@ -226,36 +234,34 @@ body.no-scroll {
   color: var(--text_color_gold);
 }
 
-.main-header__nav li.nav-lang > .lang-switcher__button img {
-  width: 18px;
-  height: 18px;
-  border-radius: 50%;
-}
-
 .main-header__nav li.nav-lang > .lang-switcher__button .arrow {
   transition: transform 0.2s ease;
 }
 
 .main-header__nav li.nav-lang > ul.lang-switcher__dropdown {
+  flex-direction: column;
   position: absolute;
-  right: 0;
-  top: calc(100% + 22px);
+  left: calc(-75% - 10px);
+  top: calc(100% + 23px);
+  min-width: max-content;
 
-  min-width: 200px;
-  padding: 8px 0;
-  margin: 0;
-  background: #000000;
-  border-radius: 14px;
+  border-radius: 0 0 14px 14px;
   box-shadow: 0 12px 30px rgba(255, 255, 255, 0.08);
-
+  overflow: hidden;
   list-style: none;
-  display: none;
-
+  opacity: 0;
+  transform: translateY(-10px);
+  visibility: hidden;
+  pointer-events: none;
+  transition: opacity 0.2s ease, transform 0.2s ease, visibility 0.2s ease;
   z-index: 1000;
 }
 
 .main-header__nav li.nav-lang.open > ul.lang-switcher__dropdown {
-  display: block;
+  opacity: 1;
+  transform: translateY(0);
+  visibility: visible;
+  pointer-events: auto;
 }
 
 .main-header__nav li.nav-lang.open > .lang-switcher__button .arrow {
@@ -265,9 +271,10 @@ body.no-scroll {
 .main-header__nav li.nav-lang > ul.lang-switcher__dropdown li a {
   display: flex;
   align-items: center;
+  justify-content: start;
   gap: 12px;
 
-  padding: 10px 16px;
+  padding: 10px 10px;
   text-decoration: none;
 
   font-size: 14px;
