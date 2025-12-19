@@ -72,3 +72,22 @@ document.addEventListener("click", function (e) {
     }, 1000);
   });
 });
+
+const appFigure = document.querySelector(".about-image");
+
+if (appFigure) {
+  const io = new IntersectionObserver(
+    (entries) => {
+      for (const entry of entries) {
+        appFigure.classList.toggle("is-visible", entry.isIntersecting);
+      }
+    },
+    {
+      root: null,
+      threshold: 0.35,
+      rootMargin: "0px 0px -10% 0px",
+    }
+  );
+
+  io.observe(appFigure);
+}

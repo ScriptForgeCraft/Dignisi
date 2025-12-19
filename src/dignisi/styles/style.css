@@ -50,7 +50,6 @@
   color: var(--text_color_gold);
   font-weight: 200;
 }
-
 /* ===========================================
    ABOUT COMPANY / MOBILE APP BLOCK
 =========================================== */
@@ -78,37 +77,35 @@
   text-decoration: none;
   letter-spacing: 0.05em;
   transition: color 0.3s ease;
-  &:hover {
-    color: var(--text_color_dark_gold);
-  }
 }
 
+.block-menu a:hover {
+  color: var(--text_color_dark_gold);
+}
+
+/* ===== Title ===== */
 .about-title span {
   font-family: "Playfair Display", serif;
   display: block;
-  &:first-child {
-    font-size: 2.8rem;
-    letter-spacing: 0.1em;
-  }
-  &:last-child {
-    font-size: 2.8rem;
-    letter-spacing: 0.1em;
-    color: var(--text_color_gold);
-  }
 }
 
-:lang(hy) .about-title span {
-  &:first-child {
-    font-size: 2rem;
-    letter-spacing: 0.1em;
-  }
-  &:last-child {
-    font-size: 2rem;
-    letter-spacing: 0.1em;
-    color: var(--text_color_gold);
-  }
+.about-title span:first-child {
+  font-size: 2.8rem;
+  letter-spacing: 0.1em;
 }
 
+.about-title span:last-child {
+  font-size: 2.8rem;
+  letter-spacing: 0.1em;
+  color: var(--text_color_gold);
+}
+
+:lang(hy) .about-title span:first-child,
+:lang(hy) .about-title span:last-child {
+  font-size: 2rem;
+}
+
+/* ===== Layout ===== */
 .about {
   position: relative;
   display: flex;
@@ -116,17 +113,28 @@
   justify-content: space-around;
 }
 
-.about-image img {
+/* ===== App image container ===== */
+
+.about-image {
   position: absolute;
   bottom: 0;
   right: 3%;
-  height: auto;
-  max-height: 85dvh;
-
   z-index: 1;
 }
 
-/* Text */
+.about-image .app-link {
+  position: relative;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.about-image img {
+  display: block;
+  height: auto;
+  max-height: 85dvh;
+}
+
+/* ===== Text columns ===== */
 .about-text {
   position: relative;
   z-index: 2;
@@ -136,14 +144,12 @@
   margin-top: 1.5rem;
 }
 
-
 .about-text .col_left,
 .about-text .col_right {
   flex: 1;
   text-align: justify;
   font-family: "Inter", sans-serif;
   font-size: 1rem;
-
   font-weight: 200;
 }
 
@@ -153,14 +159,117 @@
 :lang(ru) .about-text .col_right {
   font-family: "Noto Sans Armenian", "Noto Sans", sans-serif;
   font-weight: 100;
-  font-size: 1rem;
- 
 }
 
-
+/* ===== Quote ===== */
 .about-quote {
   font-style: italic;
   color: var(--text_color_gold);
+}
+
+/* ===========================================
+   APP DOWNLOAD CTA OVERLAY
+=========================================== */
+
+.app-cta {
+  position: absolute;
+  inset: 0;
+  display: grid;
+  place-items: center;
+  gap: 0.4rem;
+  padding: 1.2rem;
+  text-align: center;
+
+  background: rgba(0, 0, 0, 0.35);
+  backdrop-filter: blur(2px);
+
+  opacity: 0;
+  transform: translateY(-10px);
+  transition: opacity 220ms ease, transform 220ms ease;
+  pointer-events: none;
+}
+
+.app-cta__text {
+  font-family: "Inter", sans-serif;
+  font-weight: 500;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: var(--text_color_gold);
+  font-size: 2.05rem;
+  background-color: #0000005b;
+  border-radius: 20px;
+}
+
+.app-cta__hint {
+  font-family: "Inter", sans-serif;
+  font-weight: 300;
+  color: rgba(255, 255, 255, 0.85);
+  font-size: 1.2rem;
+  background-color: #0000005b;
+  border-radius: 20px;
+  padding: 10px;
+}
+
+/* hover / focus */
+.about-image .app-link:hover .app-cta,
+.about-image .app-link:focus-visible .app-cta {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* ===== Language visibility ===== */
+.app-cta__text,
+.app-cta__hint {
+  display: none;
+}
+
+:lang(en) .app-cta__text--en,
+:lang(en) .app-cta__hint--en {
+  display: inline;
+}
+
+:lang(ru) .app-cta__text--ru,
+:lang(ru) .app-cta__hint--ru {
+  display: inline;
+}
+
+:lang(hy) .app-cta__text--hy,
+:lang(hy) .app-cta__hint--hy {
+  display: inline;
+}
+
+/* ===== Animation only when visible ===== */
+.about-image.is-visible .app-link {
+  animation: appGlow 1800ms ease-in-out infinite;
+}
+
+@keyframes appGlow {
+  0%,
+  100% {
+    filter: drop-shadow(0 0 0 rgba(190, 160, 110, 0));
+  }
+  50% {
+    filter: drop-shadow(0 0 16px #cbb4885a);
+  }
+}
+
+/* ===== Reduced motion ===== */
+@media (prefers-reduced-motion: reduce) {
+  .about-image.is-visible .app-link,
+  .about-image.is-visible {
+    animation: none;
+  }
+}
+
+/* ===== Stop animation on hover / focus ===== */
+.about-image .app-link:hover,
+.about-image .app-link:focus-visible {
+  animation: none;
+}
+
+.about-image .app-link:hover,
+.about-image .app-link:focus-visible {
+  animation: none;
 }
 
 /* ===========================================
@@ -195,7 +304,7 @@
   font-size: 1rem;
 }
 
- :where(:lang(hy), :lang(ru)) .history-text {
+:where(:lang(hy), :lang(ru)) .history-text {
   width: 35%;
 }
 
@@ -694,11 +803,11 @@
 =========================================== */
 
 .analytics-chart-wrapper::-webkit-scrollbar {
-  height: 6px; 
+  height: 6px;
 }
 
 .analytics-chart-wrapper::-webkit-scrollbar-track {
-  background: rgba(255, 255, 255, 0.04); 
+  background: rgba(255, 255, 255, 0.04);
   border-radius: 10px;
 }
 
@@ -846,7 +955,7 @@
   font-weight: lighter;
 }
 
-:lang(hy)  .analytics-regional-subtitle {
+:lang(hy) .analytics-regional-subtitle {
   font-size: 1.2rem;
 }
 
