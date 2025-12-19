@@ -15,16 +15,27 @@
   max-width: 90%;
   margin-left: 8%;
 }
-:is(:lang(hy), :lang(ru)) .hero-text {
+:where(:lang(hy), :lang(ru)) .hero-text {
   max-width: 80%;
 }
 
-:lang(ru).hero-text {
+:where(:lang(ru)).hero-text {
   margin-left: 0;
 }
 :where(:lang(hy)).hero-text {
   margin-left: 15%;
 }
+
+:where(:lang(hy), :lang(en)) .hero-wrapper {
+  width: 90%;
+  text-align: justify;
+}
+
+:where(:lang(ru)) .hero-wrapper {
+  width: 100%;
+  text-align: justify;
+}
+
 .big-letter {
   position: absolute;
   left: 9%;
@@ -46,13 +57,13 @@
   font-weight: 300;
 }
 .hero-line {
-  width: 90%;
+  width: 100%;
   height: 1px;
   border: none;
   background-color: var(--text_color_gold);
   margin: 1.25rem 0 0.25rem;
 }
- 
+
 .hero-subtitle {
   font-family: "Inter", sans-serif;
   font-size: 1rem;
