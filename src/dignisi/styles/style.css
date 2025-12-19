@@ -159,6 +159,7 @@
 :lang(ru) .about-text .col_right {
   font-family: "Noto Sans Armenian", "Noto Sans", sans-serif;
   font-weight: 100;
+  font-size: .9rem;
 }
 
 /* ===== Quote ===== */
@@ -305,7 +306,9 @@
 }
 
 :where(:lang(hy), :lang(ru)) .history-text {
-  width: 35%;
+  font-size: 0.92rem;
+
+  width: 26%;
 }
 
 .history-title {
@@ -544,8 +547,8 @@
 
 :where(:lang(ru)) .podcast-text p {
   font-size: 1.2rem;
-  line-height: 1.5;
-  max-width: 40vw;
+  line-height: 1.38;
+  max-width: 41vw;
 }
 
 .podcast-text {

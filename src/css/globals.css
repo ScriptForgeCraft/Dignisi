@@ -15,7 +15,8 @@ html {
   --root_padding: 9.25rem;
   --root_padding_top: 3.5rem;
 }
-:lang(hy) {
+:lang(hy),
+:lang(ru) {
   --root_padding: 5rem;
 }
 
@@ -127,10 +128,10 @@ img {
   letter-spacing: 0.05em;
   transition: color 0.3s ease;
 }
-:lang(hy) .main-header__nav  ul  {
-  gap:0 clamp(1rem, 1.5vw, 28px);
+:lang(hy) .main-header__nav ul {
+  gap: 0 clamp(1rem, 1.5vw, 28px);
 }
-:lang(hy) .main-header__nav  a  {
+:lang(hy) .main-header__nav a {
   font-size: clamp(1rem, 1.2vw, 18px);
 }
 
