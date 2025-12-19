@@ -22,7 +22,7 @@
 :lang(ru).hero-text {
   margin-left: 0;
 }
-:lang(hy).hero-text {
+:where(:lang(hy)).hero-text {
   margin-left: 15%;
 }
 .big-letter {
