@@ -11,10 +11,20 @@
   overflow: hidden;
 }
 .hero-text {
-  max-width: calc(100% - 10%);
+  display: inline-block;
+  max-width: 90%;
   margin-left: 8%;
 }
+:is(:lang(hy), :lang(ru)) .hero-text {
+  max-width: 80%;
+}
 
+:lang(ru).hero-text {
+  margin-left: 0;
+}
+:lang(hy).hero-text {
+  margin-left: 15%;
+}
 .big-letter {
   position: absolute;
   left: 9%;
@@ -36,13 +46,13 @@
   font-weight: 300;
 }
 .hero-line {
-  width: calc(100% - 10%);
+  width: 90%;
   height: 1px;
   border: none;
   background-color: var(--text_color_gold);
   margin: 1.25rem 0 0.25rem;
 }
-
+ 
 .hero-subtitle {
   font-family: "Inter", sans-serif;
   font-size: 1rem;
@@ -159,7 +169,7 @@
 :lang(ru) .about-text .col_right {
   font-family: "Noto Sans Armenian", "Noto Sans", sans-serif;
   font-weight: 100;
-  font-size: .9rem;
+  font-size: 0.9rem;
 }
 
 /* ===== Quote ===== */
