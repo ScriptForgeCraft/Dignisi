@@ -1,4 +1,4 @@
-import "@js/scroll-fix.js";
+ 
 import "@js/navigation/headerScroll.js";
 import "@js/navigation/mobileMenu.js";
 import "@js/partners-scroll.js";
