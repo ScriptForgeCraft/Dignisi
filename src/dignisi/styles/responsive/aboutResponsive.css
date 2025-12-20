@@ -47,13 +47,14 @@
   .about-text {
     flex-direction: column;
     max-width: 90%;
-    gap: 1.6rem;
+    gap: 2.6rem;
     margin-top: 1rem;
   }
 
   .about-text p {
     font-size: 1.3rem;
     line-height: 1.45;
+    text-align: left;
   }
 
   .about-title span {
@@ -69,8 +70,6 @@
     text-align: center;
     margin-top: 2rem;
     font-size: 1.15rem;
-
-
   }
 }
 
@@ -90,7 +89,6 @@
 
   .about-text {
     max-width: 95%;
-    gap: 01rem;
   }
 
   .about-text p {

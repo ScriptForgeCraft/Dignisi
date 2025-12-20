@@ -112,6 +112,9 @@
     line-height: 1.55;
   }
 
+  :is(:lang(hy),:lang(ru)){
+    text-align: center;
+  }
   .podcast-title {
     font-size: clamp(26px, 7vw, 34px);
     text-align: center;

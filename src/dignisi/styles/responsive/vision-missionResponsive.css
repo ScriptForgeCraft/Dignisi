@@ -48,9 +48,18 @@
 /* ==========================================================
    TABLETS HORIZONTAL (max-width: 1024px)
 ========================================================== */
+
 @media (max-width: 1024px) {
+  .vision-left-block p {
+    text-align: left;
+  }
+  .vision-mission {
+    padding: 2.5em;
+  }
   .vision-mission .analytics-title {
+    opacity: 0.6;
     font-size: 3rem;
+    justify-content: end;
   }
 
   .our-vision {
@@ -71,64 +80,21 @@
     text-align: left;
   }
 }
-
-/* ==========================================================
-   TABLETS VERTICAL (max-width: 780px)
-   — полностью центрируем всё красиво
-========================================================== */
-@media (max-width: 780px) {
-  .vision-block {
-    gap: 2.5rem;
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
-  }
-
-  .our-vision {
-    font-size: 3rem;
-    width: 100%;
-    text-align: center;
-  }
-
-  .vision-left-block,
-  .vision-right-block {
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-  }
-
-  .vision-left-block p,
-  .vision-right-block p {
-    width: 85%;
-    text-align: center;
-    font-size: 1rem;
-  }
-
-  .vision-right-block {
-    align-items: center;
-  }
-  .vision-left-block p {
-    text-align: left;
-  }
+@media (max-width: 600px) {
   .vision-mission .analytics-title {
-    font-size: 2.8rem;
-    text-align: center;
-  }
-  .our-vision {
-    display: flex;
     justify-content: center;
   }
 }
-
 /* ==========================================================
-   MOBILE LARGE (max-width: 576px)
+   MOBILE LARGE (max-width: 600px)
 ========================================================== */
-@media (max-width: 576px) {
+@media (max-width: 600px) {
   .vision-mission .analytics-title {
     font-size: 2.5rem;
   }
-
+  .vision-mission {
+    padding: 1.5em;
+  }
   .our-vision {
     font-size: 2.4rem;
   }
@@ -152,7 +118,8 @@
   .vision-right-block p {
     width: 100%;
     font-size: 0.9rem;
-  }  .vision-right-block p {
+  }
+  .vision-right-block p {
     font-size: 0.9rem !important;
     line-height: 1.5 !important;
   }
@@ -167,7 +134,7 @@
 ========================================================== */
 @media (max-width: 380px) {
   .our-vision {
-    font-size: 1.8rem;
+    font-size: 2rem;
   }
 
   .vision-left-block p,
