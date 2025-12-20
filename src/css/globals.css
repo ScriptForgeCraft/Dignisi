@@ -8,6 +8,10 @@ html {
   font-size: clamp(14px, 1.2vw, 18px);
   background-color: #000;
 }
+html, body {
+  overflow-anchor: none;
+}
+
 
 :root {
   --text_color_gold: #cbb488;
@@ -69,7 +73,6 @@ img {
   overflow-x: hidden;
 }
 .block {
-  min-height: 100vh; /* fallback */
   min-height: 100dvh; /* mobile-correct */
   padding: 0 var(--root_padding);
   background-color: black;
@@ -84,7 +87,7 @@ img {
    MAIN HEADER — BASE
 ============================================ */
 .main-header {
-  position: fixed;
+  position: sticky;
   top: 0;
   left: 0;
   width: 100%;
