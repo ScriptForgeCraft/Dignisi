@@ -1,9 +1,6 @@
 @import url("./normalize.css");
 @import url("./reset.css");
 
-.page-wrapper {
-  min-height: calc(var(--vh) * 100);
-}
 
 /* =======================================
    BASE TYPOGRAPHY SETTINGS
