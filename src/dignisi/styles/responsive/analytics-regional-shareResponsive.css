@@ -99,7 +99,7 @@
 /* ==========================================================
    MOBILE LARGE (max-width: 576px)
 ========================================================== */
-@media (max-width: 576px) {
+@media (max-width:676px) {
   .chart-sales {
     flex-direction: column;
     align-items: center;

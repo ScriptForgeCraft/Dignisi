@@ -112,7 +112,8 @@
     line-height: 1.55;
   }
 
-  :is(:lang(hy),:lang(ru)){
+  :is(:lang(hy),:lang(ru)) .podcast-text p {
+    max-width: 100%;
     text-align: center;
   }
   .podcast-title {
