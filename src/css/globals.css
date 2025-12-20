@@ -1,6 +1,10 @@
 @import url("./normalize.css");
 @import url("./reset.css");
 
+.page-wrapper {
+  min-height: calc(var(--vh) * 100);
+}
+
 /* =======================================
    BASE TYPOGRAPHY SETTINGS
 ======================================= */
@@ -8,10 +12,10 @@ html {
   font-size: clamp(14px, 1.2vw, 18px);
   background-color: #000;
 }
-html, body {
+html,
+body {
   overflow-anchor: none;
 }
-
 
 :root {
   --text_color_gold: #cbb488;

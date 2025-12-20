@@ -1133,6 +1133,15 @@
             © 2020 Dignisi. All rights reserved.
         </div>
     </footer>
+    <script>
+        function setDocHeight() {
+            const vh = window.innerHeight * 0.01;
+            document.documentElement.style.setProperty('--vh', `${vh}px`);
+        }
+        window.addEventListener('load', setDocHeight);
+        window.addEventListener('resize', setDocHeight);
+    </script>
+
 
 
 </body>
