@@ -1,45 +1,40 @@
 (() => {
-  const SCROLL_RESTORE_DELAY = 0;
+  if (!window.visualViewport) return;
+
+  let lastVVHeight = window.visualViewport.height;
 
   let lastScrollY = window.scrollY;
-  let lastInnerHeight = window.innerHeight;
-  let ticking = false;
 
-  if ('scrollRestoration' in history) {
-    history.scrollRestoration = 'manual';
-  }
+  let rafLock = false;
 
   window.addEventListener(
-    'scroll',
+    "scroll",
     () => {
       lastScrollY = window.scrollY;
     },
     { passive: true }
   );
 
-  window.addEventListener('resize', () => {
-    if (ticking) return;
-    ticking = true;
+  const onVVResize = () => {
+    if (rafLock) return;
+    rafLock = true;
 
     requestAnimationFrame(() => {
-      const newInnerHeight = window.innerHeight;
-      const diff = lastInnerHeight - newInnerHeight;
+      const newVVHeight = window.visualViewport.height;
+      const diff = lastVVHeight - newVVHeight;
 
+   
       window.scrollTo({
         top: lastScrollY + diff,
         left: 0,
-        behavior: 'auto',
+        behavior: "auto",
       });
 
-      lastInnerHeight = newInnerHeight;
-      ticking = false;
+      lastVVHeight = newVVHeight;
+      rafLock = false;
     });
-  });
+  };
 
-  window.addEventListener('pageshow', () => {
-    setTimeout(() => {
-      window.scrollTo(0, lastScrollY);
-    }, SCROLL_RESTORE_DELAY);
-  });
+  window.visualViewport.addEventListener("resize", onVVResize);
+  window.visualViewport.addEventListener("scroll", onVVResize); 
 })();
-
