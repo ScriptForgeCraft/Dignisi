@@ -173,7 +173,7 @@
   font-size: 1rem;
   font-weight: 200;
 }
- 
+
 :lang(hy) .about-text .col_left,
 :lang(hy) .about-text .col_right,
 :lang(ru) .about-text .col_left,
@@ -1153,11 +1153,13 @@
   width: 90%;
   max-width: 1400px;
   margin: 0 auto;
-
   display: flex;
   justify-content: space-around;
-  align-items: flex-start;
   gap: 60px;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
 /* =========================================================
@@ -1179,7 +1181,7 @@
 }
 
 .footer__col .footer__title {
-  font-size: 1rem;
+  font-size: 1.2rem;
   font-weight: 600;
   margin-bottom: 8px;
   color: var(--text_color_gold);
@@ -1225,6 +1227,7 @@
   justify-content: center;
   align-items: center;
 }
+
 .footer__socials img.facebook-icon {
   transform: scale(1.46);
 }
@@ -1253,7 +1256,6 @@
   text-align: center;
   font-size: 13px;
   color: #999;
-  border-top: 1px solid #222;
   padding-top: 20px;
 }
 
@@ -1267,6 +1269,7 @@
   display: inline-flex;
   align-items: center;
   gap: 6px;
+  font-weight: 600;
 }
 
 .copy-item::after {
@@ -1284,4 +1287,32 @@
 .copy-item.copied::after {
   content: "✔";
   color: var(--text_color_gold);
+}
+
+/* =========================================================
+   FOOTER DIVIDER — PREMIUM GLOW
+========================================================= */
+
+.footer-divider {
+  width: 100%;
+  height: 1px;
+  margin-bottom: 20px;
+
+  background: linear-gradient(
+    to right,
+    transparent 0%,
+    rgba(190, 160, 110, 0.25) 30%,
+    rgba(190, 160, 110, 0.6) 50%,
+    rgba(190, 160, 110, 0.25) 70%,
+    transparent 100%
+  );
+}
+
+.mobile-badge :last-child {
+  margin-top: 0.6rem;
+}
+
+.mobile-badge img:hover{
+box-shadow:0 5px 15px rgba(255, 255, 255, 0.118);
+  transition: 0.3s ease;
 }
