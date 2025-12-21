@@ -74,7 +74,7 @@ img {
   overflow-x: hidden;
 }
 .block {
-  min-height: 100dvh; /* mobile-correct */
+  min-height: 100svh; 
   padding: 0 var(--root_padding);
   background-color: black;
   color: white;
