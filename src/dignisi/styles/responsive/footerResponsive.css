@@ -52,6 +52,9 @@
     width: 34px;
     height: 34px;
   }
+  .mobile-badge {
+    display: flex;
+  }
 }
 /* =========================================================
    FOOTER — MOBILE (max-width: 600px)
